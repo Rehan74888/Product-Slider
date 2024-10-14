@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- Demo styles -->
+  <style>
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      margin: 0;
+      padding: 0;
+    }
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .swiper {
+      width: 100%;
+      height: 300px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .swiper-slide {
+      background-size: cover;
+      background-position: center;
+    }
+    .mySwiper2 {
+      height: 100%;
+      width: 100%;
+      border-radius: 24px;
+    }
+    .mySwiper2 img{
+      border-radius: 24px;
+    }
+    .mySwiper {
+      width: 100%;
+      height: 100%;
+      box-sizing: border-box;
+      padding: 0px;
+      border-radius: 10px;
+    }
+    .mySwiper img{
+      width: 80%;
+      height: auto;
+      border-radius: 10px;
+    }
+    .mySwiper .swiper-slide {
+      width: auto;
+      height: auto;
+      opacity: 0.4;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .mySwiper .swiper-slide-thumb-active {
+      opacity: 1;
+    }
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .swiper-button-next, .swiper-button-prev{
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: #741C1C;
+    }
+    .swiper-button-next:after, .swiper-button-prev:after{
+      content: "";
+    }
+    .swiper-button-prev{
+      rotate: 180deg;
+    }
+    .main-container{
+      width: 100%;
+      height: 100%;
+    }
+    .container-1{
+      width: 550px;
+      max-height: 100%;
+    }
+    .mySwiper .swiper-slide-thumb-active{
+      box-sizing: border-box;
+      border-radius: 10px;
+      border: 3px solid #741C1C;
+    }
+    .swiper-wrap{
+      width: 50%;
+      max-height: 550px;
+      display: flex;
+      flex-direction: row-reverse;
+      gap: 25px;
+      padding: 25px;
+    }
+    .mySwiper{
+      overflow-x: scroll;
+      overflow-y: scroll;
+    }
+    .mySwiper::-webkit-scrollbar {
+      display: none;
+    }
+    @media (max-width: 767px){
+    .swiper-wrap{
+      width: 100%;
+      padding: 0px;
+    }
+  }
+    @media (max-width: 1298px){
+    .swiper-wrap {
+      flex-direction: column;
+    }
+    .mySwiper{
+      height: 100%;
+      overflow-y: scroll;
+    }
+    .container-1{
+      width: 100%;
+      max-height: none;
+    }
+    .swiper-button-next, .swiper-button-prev{
+      width: 7%;
+      height: 7%;
+    }
+    .swiper-button-next img, .swiper-button-prev img{
+      width: 50%;
+    }
+  }
+</style>
+</head>
+<body>
+  <!-- Swiper -->
+   <div class="main-container">
+    <div class="swiper-wrap">
+    <div class="container-1">
+  <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="swiper-zoom-container">
+        <img src="images/image-1.webp">
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="swiper-zoom-container">
+        <img src="images/image-2.webp">
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="swiper-zoom-container">
+        <img src="images/image-3.webp">
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="swiper-zoom-container">
+        <img src="images/image-4.webp">
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="swiper-zoom-container">
+        <img src="images/image-5.webp">
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="swiper-zoom-container">
+        <img src="images/image-6.webp">
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="swiper-zoom-container">
+        <img src="images/image-7.webp">
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="swiper-zoom-container">
+        <img src="images/image-8.webp">
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="swiper-zoom-container">
+        <img src="images/image-9.webp">
+        </div>
+      </div>
+    </div>
+    <div class="swiper-button-next">
+        <img src="images/Vector (2).png" alt="navigation-arrow">
+    </div>
+    <div class="swiper-button-prev">
+        <img src="images/Vector (2).png" alt="navigation-arrow">
+    </div>
+  </div>
+</div>
+  <div class="container-2">
+  <div thumbsSlider="" class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="images/image-1.webp">
+      </div>
+      <div class="swiper-slide">
+        <img src="images/image-2.webp">
+      </div>
+      <div class="swiper-slide">
+        <img src="images/image-3.webp">
+      </div>
+      <div class="swiper-slide">
+        <img src="images/image-4.webp">
+      </div>
+      <div class="swiper-slide">
+        <img src="images/image-5.webp">
+      </div>
+      <div class="swiper-slide">
+        <img src="images/image-6.webp">
+      </div>
+      <div class="swiper-slide">
+        <img src="images/image-7.webp">
+      </div>
+      <div class="swiper-slide">
+        <img src="images/image-8.webp">
+      </div>
+      <div class="swiper-slide">
+        <img src="images/image-9.webp">
+      </div>
+    </div>
+  </div>
+  </div>
+    </div>
+</div>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+    mousewheel: {
+    releaseOnEdges: true,
+    },
+      spaceBetween: 10,
+      // slidesPerView: 5,
+      freeMode: true,
+      watchSlidesProgress: true,
+      breakpoints: {  
+      300: {
+        slidesPerView: 4,
+      },
+      380: {
+        slidesPerView: 5,
+      },
+      500: {
+        slidesPerView: 6,
+      },
+      750: {
+        slidesPerView: 4,
+      },
+      1200: {
+        slidesPerView: 5,
+      },
+      1299: {
+        direction: 'vertical',
+        slidesPerView: 5,
+      },
+      } 
+    });
+    var swiper2 = new Swiper(".mySwiper2", {
+      loop: true,
+      zoom: {
+        maxRatio: 2,
+        minRatio: 2,
+      },
+      spaceBetween: 10,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      thumbs: {
+        swiper: swiper,
+      },
+    });
+  </script>
+</body>
+</html>
